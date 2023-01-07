@@ -9,7 +9,7 @@
   </head>
   <body>
     <div id="unity-container" class="unity-desktop">
-      <canvas id="unity-canvas" width=700 height=400></canvas>
+      <canvas id="unity-canvas" width=960 height=600></canvas>
       <div id="unity-loading-bar">
         <div id="unity-logo"></div>
         <div id="unity-progress-bar-empty">
@@ -29,9 +29,9 @@
       var buildUrl = "Build";
       var loaderUrl = buildUrl + "/FourElements.loader.js";
       var config = {
-        dataUrl: buildUrl + "/FourElements.data.gz",
-        frameworkUrl: buildUrl + "/FourElements.framework.js.gz",
-        codeUrl: buildUrl + "/FourElements.wasm.gz",
+        dataUrl: buildUrl + "/FourElements.data",
+        frameworkUrl: buildUrl + "/FourElements.framework.js",
+        codeUrl: buildUrl + "/FourElements.wasm",
         streamingAssetsUrl: "StreamingAssets",
         companyName: "DefaultCompany",
         productName: "TheFourElements",
@@ -62,8 +62,8 @@
           mobileWarning.style.display = "none";
         }, 5000);
       } else {
-        canvas.style.width = "700px";
-        canvas.style.height = "400px";
+        canvas.style.width = "960px";
+        canvas.style.height = "600px";
       }
       loadingBar.style.display = "block";
 
